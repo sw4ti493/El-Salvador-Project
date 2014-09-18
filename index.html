@@ -1,175 +1,215 @@
 <!DOCTYPE html>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<html>
 <head lang="en">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>mPurpose - Multipurpose Feature Rich Bootstrap Template</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>Travel 2 Teach El Salvador</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-    <link rel="stylesheet" href="mPurpose-master/css/bootstrap.min.css">
-    <link rel="stylesheet" href="mPurpose-master/css/icomoon-social.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="mPurpose-master/css/leaflet.css" />
-    <link rel="stylesheet" href="mPurpose-master/css/main.css">
+    <style>
+        .carousel-container {
+            background-color:black;
+        }
 
-    <script src="mPurpose-master/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        #contact {
+            background-color:lightslategrey;
+            color:white;
+            text-decoration:none;
+        }
+
+        a:link {
+            color: white;
+        }
+
+        .navbar-default {
+            font-size:1.5em;
+            color:white;
+            background-color:dodgerblue;
+        }
+
+        #about {
+            color:darkblue;
+        }
+
+        .panel-heading {
+            text-align:center;
+        }
+
+
+
+    </style>
 </head>
-<body  class="container">
-<div class="mainmenu-wrapper">
-    <div class="container">
-        <nav id="mainmenu" class="mainmenu" style="margin:30px;">
-            <ul>
-                <li class="logo-wrapper"><a href="index.html"><img src="T2T-logo.gif" alt="Travel to Teach"></a></li>
-                <li class="active">
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#testimonials">Testimonials</a>
-                </li>
-                <li>
-                    <a href="#apply">Apply!</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
-<!-- Homepage Slider -->
-<div class="homepage-slider" align="center" style="border-left: 6px solid #4f8db3; border-right: 6px solid #4f8db3;">
-    <div id="sequence">
-        <ul class="sequence-canvas">
-            <li class="bg4">
-                <h2 class="title">Travel.</h2>
-                <h3 class="subtitle"><em>The opportunity to explore the world and its diversity...</em></h3>
-                <img class="slide-img" src="beach.jpg" alt="Salvadorean Beach">
-            </li>
-            <li class="bg4">
-                <h2 class="title">Experience.</h2>
-                <h3 class="subtitle"><em>An immersive experience deep into the rich Salvadorean culture...</em></h3>
-                <img class="slide-img" src="centralamericanfood.jpg" alt="Salvadorean Food" >
-            </li>
-            <li class="bg4">
-                <h2 class="title">Serve.</h2>
-                <h3 class="subtitle"><em>The opportunity to make a real difference...</em></h3>
-                <img class="slide-img" src="salvador2.jpg" alt="Sightseeing in El Salvador">
-            </li>
-        </ul>
-        <div class="sequence-pagination-wrapper">
-            <ul class="sequence-pagination">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
+<body class="container">
+    <section id="navigation" data-spy="scroll" data-target=".navbar-default">
+        <div class="navbar-default navbar-fixed-top">
+            <ul class="nav nav-tabs" role="tablist">
+                <li><a href="#navigation"><img src="T2T-logo.gif" style="max-height:50px"></a></li>
+                <li><a href="#frontTitle">Home</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#about">Core Values</a></li>
+                <li><a href="#apply"><strong>Apply!</strong></a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </div>
-</div>
-<!-- End Homepage Slider -->
+    </section>
+    <br>
+    <!--Title-->
+    <section>
+        <div style="height:50px; background-color:white;">
 
-<!-- Testimonials -->
-<div class="section" id="testimonials" style="height:400px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="in-press">
-                    <a>Morbi eleifend congue elit nec sagittis. Praesent aliquam lobortis tellus, nec consequat vitae</a>
-                    <h4 style="text-align:right; display:block; padding-right:20px;">~ First LastName</h4>
-                    <h4 style="text-align:right; display:block; padding-right:20px;">Month-Month, Year</h4>
+        </div>
+        <div style="text-align:center;">
+            <h1 id="frontTitle">Travel to Teach</h1>
+            <h3>El Salvador</h3>
+        </div>
+    </section>
+    <div class="carousel-container">
+            <hr><br><br><br>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width:600px;margin:auto;">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#beach" data-slide-to="0" class="active"></li>
+                    <li data-target="#food" data-slide-to="1"></li>
+                    <li data-target="#sightseeing" data-slide-to="2"></li>
+                    <li data-target="#teaching" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="beach.jpg" alt="beach" id="beach">
+                    </div>
+                    <div class="item">
+                        <img src="centralamericanfood.jpg" alt="central american food" id="food">
+                    </div>
+                    <div class="item">
+                        <img src="sightseeing.jpg" alt="sightseeing" id="sightseeing">
+                    </div>
+                    <div class="item">
+                        <img src="salvador2.jpg" alt="teaching in classroom" id="teaching" style="width:600px;">
+                    </div>
                 </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="in-press">
-                    <a>Morbi eleifend congue elit nec sagittis. Praesent aliquam lobortis tellus, nec consequat vitae</a>
-                    <h4 style="text-align:right; display:block; padding-right:20px;">~ First LastName</h4>
-                    <h4 style="text-align:right; display:block; padding-right:20px;">Month-Month, Year</h4>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="in-press">
-                    <a>Morbi eleifend congue elit nec sagittis. Praesent aliquam lobortis tellus, nec consequat vitae</a>
-                    <h4 style="text-align:right; display:block; padding-right:20px;">~ First LastName</h4>
-                    <h4 style="text-align:right; display:block; padding-right:20px;">Month-Month, Year</h4>
+            <br><br>
+    </div>
+    <hr>
+    <!--Testimonials-->
+    <section id="testimonials" class="container">
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading"><h4><em>No Place Like Home...</em></h4></div>
+                <div class="panel-body" style="height:200px;">
+                    <p>I never thought I would really be able to call another country my home, but I can say in all honesty that El Salvador has become my second home. </p>
+                    <p><em>~ First LastName, Year</em></p>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- End Testimonials -->
-
-<!-- Images -->
-<div class="section" style="height:350px; background-color:palegreen; border-left: 6px solid #4f8db3; border-right: 6px solid #4f8db3;">
-    <div class="container">
-        <div class="row">
-            <div class="testimonial col-md-4 col-sm-6">
-                <div>
-                    <blockquote>
-                        <p style="font-weight:bold; font-size:2em; text-align:center; color: #4f8db3;">
-                            Travel.
-                        </p>
-                    </blockquote>
-                </div><br><br>
-                <div class="author-photo">
-                    <img src="globe.jpeg" style="max-height:125px; border-radius:20%;">
-                </div>
-            </div>
-            <div class="testimonial col-md-4 col-sm-6">
-                <div>
-                    <blockquote>
-                        <p style="font-weight:bold; font-size:2em; text-align:center; color: #4f8db3;">
-                            Experience.
-                        </p>
-                    </blockquote>
-                </div><br><br>
-                <div class="author-photo">
-                    <img src="lightbulb.png" style="max-height:125px; border-radius:20%;">
-                </div>
-            </div>
-            <div class="testimonial col-md-4 col-sm-6">
-                <div>
-                    <blockquote>
-                        <p style="font-weight:bold; font-size:2em; text-align:center; color: #4f8db3;">
-                            Serve.
-                        </p>
-                    </blockquote>
-                </div><br><br>
-                <div class="author-photo">
-                    <img src="heart.png" style="max-height:125px; border-radius:20%;">
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading"><h4><em>Always Welcoming</em></h4></div>
+                <div class="panel-body" style="height:200px;">
+                    <p>I could talk about Margarita de Duran Girls Public School: the fun-filled staff; the enthusiastic, hard working students; the wonderful welcoming that I felt at every turn.</p>
+                    <p><em>~ First LastName, Year</em></p>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- Images -->
-<br><br><br>
-<div>
-    <form role="form">
-        <div class="form-group">
-            <input type="email" class="form-control col-md-6" id="exampleInputEmail1" placeholder="Email Address">
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading"><h4><em>Time of Your Life!</em></h4></div>
+                <div class="panel-body" style="height:200px;">
+                    <p>My entire stay here has exceeded any expectations I’ve had. I didn’t really have any idea of what it would be like but the time I’ve spent here have been some of the best months in my life. I’ve made wonderful friends, both other volunteers but also locals living here.</p>
+                    <p><em>~ First LastName, Year</em></p>
+                </div>
+            </div>
         </div>
-        <div><button type="submit" class="btn btn-default">Go!</button></div>
-    </form>
-</div>
+        <br><hr><hr>
+    </section>
+    <!--About Icons-->
+    <section id="about" class="container">
+        <div class="col-md-4" style="text-align:center;">
+            <h2 style="text-align:center;">Travel.</h2><br>
+            <img src="globe.jpeg" style="max-width:125px"></img>
+        </div>
+        <div class="col-md-4" style="text-align:center;">
+            <h2 style="text-align:center;">Experience.</h2><br>
+            <img src="lightbulb.png" style="max-width:125px"></img>
+        </div>
+        <div class="col-md-4" style="text-align:center;">
+            <h2 style="text-align:center;">Serve.</h2><br>
+            <img src="heart.png" style="max-width:125px"></img>
+        </div>
+        <br><br>
+    </section>
+    <br><br><br>
+    <!--Apply Now-->
+    <section id="apply" class=" input-group container">
+        <h1>Apply Now!</h1><br>
+        <h4>Enter your email address below to receive your full application and more information.</h4>
+        <div class="input-group">
+            <input type="text" class="form-control" style="height:50px;" placeholder="Email Address">
+            <span class="input-group-addon" style="height:50px"><button class="btn btn-success">Go!</button></span>
+        </div>
+    </section>
+    <br><br><br><hr><hr>
+    <!--Contact-->
+    <section id="contact">
+        <!-- Footer -->
+        <footer class="text-center">
+                <div class="container" style="margin:-40px;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Location</h3>
+                            <p>Address Line 1<br>Address Line 2<br>Address Line 3<br>Phone Number</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Around the Web</h3>
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="#"><img src="facebook.png"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="twitter.png"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="phone.png"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="mail.png"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br><hr>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            Copyright &copy; Swati Kumar 2014
+                        </div>
+                    </div>
+                </div>
+                <hr>
+        </footer>
+    </section>
 
-
-<div>
-    <h5>Copyright 2014 Swati Kumar</h5>
-</div>
-
-
-
-<!-- Javascripts -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="mPurpose-master/js/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="mPurpose-master/js/bootstrap.min.js"></script>
-<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
-<script src="mPurpose-master/js/jquery.fitvids.js"></script>
-<script src="mPurpose-master/js/jquery.sequence-min.js"></script>
-<script src="mPurpose-master/js/jquery.bxslider.js"></script>
-<script src="mPurpose-master/js/main-menu.js"></script>
-<script src="mPurpose-master/js/template.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval: 2000,
+            wrap: true
+        });
+    </script>
 
 </body>
 </html>
