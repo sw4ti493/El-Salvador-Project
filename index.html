@@ -8,17 +8,20 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Delius|Merriweather:400,700' rel='stylesheet' type='text/css'>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <style>
 
         #containerBody {
-            background-color:mintcream ;
+            background-color:#4B8A08;
         }
-        
-{}
+
         .carousel-container {
-            background-color:black;
+            background-color:#F2F5A9;
+            
         }
 
         #contact {
@@ -28,14 +31,13 @@
         }
 
         a:link {
-            color: white;
+            color: #000;
         }
-        
-        
-        .navbar-default {
-            font-size:1.5em;
+
+        .navbar-inverse {
+            font-size:1.2em;
             color:white;
-            background-color:dodgerblue;
+            font-family:"Lato",sans-serif;
         }
 
         #about {
@@ -46,36 +48,56 @@
             text-align:center;
         }
 
+        h1 {
+            font-family:"Delius", sans-serif;
+            font-size: 4.3em;
+            font-weight: bold;
+            color:#006699;
+            text-align:center;
+        }
+
+        h3 {
+            font-family:"Lato", sans-serif;
+            font-size: 3.3em;
+            color:#E59400;
+            text-align:center;
+        }
+
+        h4 {
+            text-align:center;  
+        }
+
 
     </style>
 </head>
-<body class="container" id="containerBody">
-    <section id="navigation" data-spy="scroll" data-target=".navbar-default">
-        <div class="navbar-default navbar-fixed-top">
-            <ul class="nav nav-tabs" role="tablist">
-                <li><a href="#navigation"><img src="T2T-logo.gif" style="max-height:50px"></a></li>
-                <li><a href="#frontTitle">Home</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#about">Core Values</a></li>
-                <li><a href="#apply"><strong>Apply!</strong></a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li></li>
-            </ul>
-        </div>
+<body id="containerBody">
+    <section id="navigation" data-spy="scroll" data-target=".navbar-inverse">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <ul class="nav navbar-nav" role="tablist">
+                    <li><a href="#navigation"><img src="T2T-logo.gif" style="max-height:50px"></a></li>
+                    <li><a href="#frontTitle">Home</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#about">Core Values</a></li>
+                    <li><a href="#apply"><strong>APPLY!</strong></a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </section>
     <br>
     <!--Title-->
     <section>
-        <div style="height:50px; background-color:white;">
 
         </div>
-        <div style="text-align:center;">
+        <div style="">
             <h1 id="frontTitle">Travel to Teach</h1>
-            <h3>El Salvador</h3>
+            <h3>El Salvador</h3><br>
         </div>
     </section>
-    <div class="carousel-container">
-            <hr><br>
+    <div class="carousel-container container">
+            <br><br>
+            <div></div>
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width:600px;margin:auto;">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -109,14 +131,15 @@
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
             </div>
+            <div></div>
             <br><br>
     </div>
-    <hr>
+    <hr class="container">
     <!--Testimonials-->
     <section id="testimonials" class="container">
         <div class="col-md-4">
-            <div class="panel panel-info">
-                <div class="panel-heading"><h4><em>No Place Like Home...</em></h4></div>
+            <div class="panel panel-default">
+                <div class="panel-heading"><h4>No Place Like Home...</h4></div>
                 <div class="panel-body" style="height:200px;">
                     <p>I never thought I would really be able to call another country my home, but I can say in all honesty that El Salvador has become my second home. </p>
                     <p><em>~ First LastName, Year</em></p>
@@ -124,8 +147,8 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="panel panel-info">
-                <div class="panel-heading"><h4><em>Always Welcoming</em></h4></div>
+            <div class="panel panel-default">
+                <div class="panel-heading"><h4>Always Welcoming</h4></div>
                 <div class="panel-body" style="height:200px;">
                     <p>I could talk about Margarita de Duran Girls Public School: the fun-filled staff; the enthusiastic, hard working students; the wonderful welcoming that I felt at every turn.</p>
                     <p><em>~ First LastName, Year</em></p>
@@ -133,8 +156,8 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="panel panel-info">
-                <div class="panel-heading"><h4><em>Time of Your Life!</em></h4></div>
+            <div class="panel panel-default">
+                <div class="panel-heading"><h4>Time of Your Life!</h4></div>
                 <div class="panel-body" style="height:200px;">
                     <p>My entire stay here has exceeded any expectations I’ve had. I didn’t really have any idea of what it would be like but the time I’ve spent here have been some of the best months in my life. I’ve made wonderful friends, both other volunteers but also locals living here.</p>
                     <p><em>~ First LastName, Year</em></p>
@@ -169,9 +192,9 @@
             <span class="input-group-addon" style="height:50px"><button class="btn btn-success">Go!</button></span>
         </div>
     </section>
-    <br><br><br><hr><hr>
+    <br><br><br>
     <!--Contact-->
-    <section id="contact">
+    <section id="contact" class="container">
         <!-- Footer -->
         <footer class="text-center">
                 <div class="container" style="margin:-40px;">
